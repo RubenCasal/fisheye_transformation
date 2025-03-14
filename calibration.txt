@@ -1,0 +1,39 @@
+LEFT FISHEYE CAMERA (INDEX:1)
+
+// Resolution
+int width_1 = 848;
+int height_1 = 800;
+
+// Intrinsic Matrix (K_mat)
+cv::Mat K_mat_1 = (cv::Mat_<double>(3,3) <<
+    286.497,   0.000, 421.205,
+    0.000,   286.372, 394.644,
+    0.000,     0.000,   1.000);
+
+// Distortion Coefficients (D_mat)
+cv::Mat D_mat_1 = (cv::Mat_<double>(5,1) <<
+    -0.012458,
+     0.053698,
+    -0.050414,
+     0.010165,
+     0.000000);
+
+
+RIGHT FISHEYE CAMERA (INDEX:2)
+// Resolution
+int width_2 = 848;
+int height_2 = 800;
+
+// Intrinsic Matrix (K_mat)
+cv::Mat K_mat_2 = (cv::Mat_<double>(3,3) <<
+    286.072,   0.000, 422.058,
+    0.000,   286.004, 396.911,
+    0.000,     0.000,   1.000);
+
+// Distortion Coefficients (D_mat)
+cv::Mat D_mat_2 = (cv::Mat_<double>(5,1) <<
+    -0.010693,
+     0.048352,
+    -0.044937,
+     0.008297,
+     0.000000);
